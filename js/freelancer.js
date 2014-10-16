@@ -1,8 +1,23 @@
-/*!
- * Start Bootstrap - Freelancer Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
+// height width
+
+var wHeight = $(window).height();
+var wWidth = $(window).width();
+$('header').css('height', wHeight);
+if ( (wHeight / wWidth) < (9/16) ) {
+    $('header video').css('width','100%');
+} else {
+    $('header video').css('height','100%')
+};
+
+$( window ).resize(function() {
+    $('header video').attr('style','')
+    $('header').css('height', $(window).height());
+    if ( ($(window).height() / $(window).width()) < (9/16) ) {
+      $('header video').css('width','100%')
+    } else {
+      $('header video').css('height','100%')
+    };
+});
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
