@@ -16,7 +16,7 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: #18bc9c;
+    color: #ff5177;
 }
 
 h1,
@@ -101,7 +101,9 @@ header .intro-text .skills {
     }
 
     .navbar-fixed-top .navbar-brand {
-        font-size: 2em;
+        font-size: 4em;
+        font-family: 'Dancing Script', cursive;
+        letter-spacing: -0.05em;
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
@@ -112,7 +114,7 @@ header .intro-text .skills {
     }
 
     .navbar-fixed-top.navbar-shrink .navbar-brand {
-        font-size: 1.5em;
+        font-size: 3em;
     }
 }
 
@@ -149,7 +151,7 @@ section h2 {
 
 section.success {
     color: #fff;
-    background: #18bc9c;
+    background: #ff5177;
 }
 
 @media(max-width:767px) {
@@ -233,7 +235,7 @@ section.success {
 .btn-outline:active,
 .btn-outline.active {
     border: solid 2px #fff;
-    color: #18bc9c;
+    color: #ff5177;
     background: #fff;
 }
 
@@ -286,7 +288,7 @@ section.success {
 }
 
 .floating-label-form-group-with-focus label {
-    color: #18bc9c;
+    color: #ff5177;
 }
 
 form .row:first-child .floating-label-form-group {
