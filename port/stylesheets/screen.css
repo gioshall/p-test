@@ -148,3 +148,7 @@ section ul li .tag {
   font-size: 0.5em;
   text-transform: uppercase;
 }
+section .about {
+  width: 80%;
+  margin: auto;
+}
