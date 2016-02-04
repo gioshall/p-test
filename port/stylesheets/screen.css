@@ -149,6 +149,26 @@ section ul li .tag {
   text-transform: uppercase;
 }
 section .about {
-  width: 80%;
+  width: 60%;
   margin: auto;
+  font-size: 1em;
+  line-height: 2em;
+}
+section .about b {
+  font-weight: bold;
+  border-bottom: 2px #ff9900 solid;
+}
+section .about h2 {
+  font-size: 1.5em;
+}
+section .about ul.skillset {
+  text-align: left;
+}
+section .about ul.skillset li {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+section .about ul.skillset li small {
+  font-size: 0.6em;
 }
