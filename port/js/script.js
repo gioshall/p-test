@@ -2,7 +2,6 @@
 var wHeight = $(window).height();
 var wWidth = $(window).width();
 
-$('header h1').css('line-height', wHeight + 'px');
 $('header').css('height', wHeight);
 if ( (wHeight / wWidth) < (9/16) ) {
     $('header video').css('width','100%');
