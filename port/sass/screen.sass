@@ -10,6 +10,7 @@ body
 	margin: 0
 	padding: 0
 	background: #f5f5f5
+	font-family: 'Roboto', sans-serif
 
 nav
 	width: 100%
@@ -22,7 +23,7 @@ nav
 		line-height: 70px
 		top: 0
 		right: 10px
-		font-size: 1.1em
+		font-size: 1.1rem
 		li
 			display: inline-block
 			padding: 0 10px
@@ -66,8 +67,8 @@ section
 	z-index: 1
 	background: rgba(255,255,255,0.7)
 	h1
-		font-size: 2.2em
-		line-height: 3em
+		font-size: 2.2rem
+		line-height: 3rem
 		text-align: center
 	ul
 		text-align: center
@@ -81,21 +82,39 @@ section
 				height: 200px
 				background: #ccc
 			h2
-				font-size: 1.2em
-				line-height: 1.8em
+				font-size: 1.2rem
+				line-height: 1.8rem
 			.tag
-				font-size: .5em
+				font-size: .6rem
 				text-transform: uppercase
 	.about
-		width: 60%
+		width: 80%
 		margin: auto
-		font-size: 1em
-		line-height: 2em
+		font-size: 1rem
+		line-height: 2rem
+		.bio,
+		.skill
+			display: inline-block
+			vertical-align: top
+		.bio
+			width: 75%
+		.skill
+			width: 23%
 		b
 			font-weight: bold
 			border-bottom: 2px #ff9900 solid
 		h2
-			font-size: 1.5em
+			font-size: 1.5rem
+			line-height: 3.5rem
+		.lang
+			display: inline-block
+			width: 47%
+			vertical-align: top
+			&.zh
+				margin-left: 3%
+		hr
+			margin: 1.5rem 0
+			opacity: 0
 		ul
 			&.skillset
 				text-align: left
@@ -103,6 +122,7 @@ section
 					display: block
 					margin: 0
 					padding: 0
+					width: 100%
 					small
-						font-size: .6em
+						font-size: .7rem
 
