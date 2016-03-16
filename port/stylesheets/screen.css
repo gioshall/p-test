@@ -149,7 +149,7 @@ section ul li {
   margin: 15px auto;
 }
 section ul li .cover {
-  width: 90%;
+  width: 350px;
   margin: auto;
   height: 200px;
   background: #ccc;
@@ -174,7 +174,9 @@ section .about b {
 }
 section .about h2 {
   font-size: 1.5rem;
-  line-height: 3.5rem;
+  line-height: 4rem;
+  text-align: center;
+  margin-top: 2.5rem;
 }
 section .about .lang {
   display: inline-block;
@@ -189,10 +191,14 @@ section .about hr {
   opacity: 0;
 }
 section .about ul.skillset {
-  text-align: left;
+  text-align: center;
   display: inline-block;
   width: 33%;
   vertical-align: top;
+}
+section .about ul.skillset i {
+  color: #ff9900;
+  font-size: 1.8rem;
 }
 section .about ul.skillset li {
   display: block;
@@ -202,4 +208,61 @@ section .about ul.skillset li {
 }
 section .about ul.skillset li small {
   font-size: 0.7rem;
+}
+
+.detail {
+  position: fixed;
+  width: 90%;
+  left: 5%;
+  top: 10%;
+  height: 80%;
+  background-color: #efefef;
+  z-index: 100;
+  box-shadow: 0px 1px 10px rgba(150, 150, 150, 0.5);
+  -moz-transition: ease-in 0.2s;
+  -o-transition: ease-in 0.2s;
+  -webkit-transition: ease-in 0.2s;
+  transition: ease-in 0.2s;
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+.detail.show {
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.detail .inner {
+  margin: 10px;
+}
+.detail .close {
+  font-size: 2rem;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+}
+.detail .close:before, .detail .close:after {
+  content: "";
+  width: 2px;
+  font-size: 0;
+  height: 30px;
+  position: absolute;
+  background-color: #888;
+}
+.detail .close:before {
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.detail .close:after {
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
 }

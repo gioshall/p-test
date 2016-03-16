@@ -78,7 +78,7 @@ section
 			display: inline-block
 			margin: 15px auto
 			.cover
-				width: 90%
+				width: 350px
 				margin: auto
 				height: 200px
 				background: #ccc
@@ -98,7 +98,9 @@ section
 			border-bottom: 2px #ff9900 solid
 		h2
 			font-size: 1.5rem
-			line-height: 3.5rem
+			line-height: 4rem
+			text-align: center
+			margin-top: 2.5rem
 		.lang
 			display: inline-block
 			width: 47%
@@ -110,10 +112,13 @@ section
 			opacity: 0
 		ul
 			&.skillset
-				text-align: left
+				text-align: center
 				display: inline-block
 				width: 33%
 				vertical-align: top
+				i
+					color: #ff9900
+					font-size: 1.8rem
 				li
 					display: block
 					margin: 0
@@ -121,4 +126,40 @@ section
 					width: 100%
 					small
 						font-size: .7rem
+.detail
+	position: fixed
+	width: 90%
+	left: 5%
+	top: 10%
+	height: 80%
+	background-color: #efefef
+	z-index: 100
+	box-shadow: 0px 1px 10px rgba(150,150,150,0.5)
+	+transition(0.2s ease-in)
+	+transform(scale(0))
+	&.show
+		+transform(scale(1))
+	.inner
+		margin: 10px
+	.close
+		font-size: 2rem
+		position: absolute
+		top: 15px
+		right: 20px
+		width: 25px
+		height: 25px
+		text-align: center
+		&:before,
+		&:after
+			content: ''
+			width: 2px
+			font-size: 0
+			height: 30px
+			position: absolute
+			background-color: #888
+		&:before
+			+transform(rotate(-45deg))
+		&:after
+			+transform(rotate(45deg))
+
 

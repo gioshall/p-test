@@ -18,3 +18,11 @@ $( window ).resize(function() {
       $('header video').css('height','100%')
     };
 });
+
+$('.works li').click(function(){
+	$('.detail').addClass('show')
+});
+
+$('.detail .close').click(function(){
+	$('.detail').removeClass('show')
+})
