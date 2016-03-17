@@ -55,7 +55,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 ::selection {
-  background: #23C2C8;
+  background: #ff9900;
 }
 
 body {
@@ -63,6 +63,25 @@ body {
   padding: 0;
   background: #f5f5f5;
   font-family: "Roboto", sans-serif;
+}
+body.blur header,
+body.blur section {
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+body.blur:after {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  background-color: rgba(50, 50, 50, 0.6);
+  content: "";
 }
 
 nav {
@@ -212,30 +231,65 @@ section .about ul.skillset li small {
 
 .detail {
   position: fixed;
-  width: 90%;
-  left: 5%;
-  top: 10%;
-  height: 80%;
+  width: 92%;
+  left: 4%;
+  top: 5%;
+  height: 90%;
   background-color: #efefef;
-  z-index: 100;
-  box-shadow: 0px 1px 10px rgba(150, 150, 150, 0.5);
-  -moz-transition: ease-in 0.2s;
-  -o-transition: ease-in 0.2s;
-  -webkit-transition: ease-in 0.2s;
-  transition: ease-in 0.2s;
-  -moz-transform: scale(0);
-  -ms-transform: scale(0);
-  -webkit-transform: scale(0);
-  transform: scale(0);
+  z-index: 0;
+  box-shadow: 0px 1px 20px rgba(100, 100, 100, 0.4), 0px 1px 5px rgba(80, 80, 80, 0.5);
+  opacity: 0;
+  -moz-transition: linear 0.2s;
+  -o-transition: linear 0.2s;
+  -webkit-transition: linear 0.2s;
+  transition: linear 0.2s;
+  -moz-transform: translateY(50%) scale(1);
+  -ms-transform: translateY(50%) scale(1);
+  -webkit-transform: translateY(50%) scale(1);
+  transform: translateY(50%) scale(1);
 }
 .detail.show {
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -webkit-transform: scale(1);
-  transform: scale(1);
+  z-index: 100;
+  opacity: 1;
+  -moz-transform: translateY(0) scale(1);
+  -ms-transform: translateY(0) scale(1);
+  -webkit-transform: translateY(0) scale(1);
+  transform: translateY(0) scale(1);
+}
+.detail .scroll {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: auto;
 }
 .detail .inner {
-  margin: 10px;
+  width: 60%;
+  margin: 30px auto;
+  position: relative;
+  text-align: center;
+}
+.detail .inner h1 {
+  font-size: 2.2rem;
+  line-height: 3rem;
+  padding: 5rem 0 1rem;
+}
+.detail .inner h3 {
+  font-size: 1.3rem;
+  line-height: 2.2rem;
+  margin-bottom: 30px;
+  font-weight: thin;
+}
+.detail .inner .pic {
+  width: 100%;
+  height: 500px;
+  background-color: #ccc;
+  margin: 15px auto;
+}
+.detail .inner p {
+  font-size: 1rem;
+  line-height: 1.9rem;
 }
 .detail .close {
   font-size: 2rem;
@@ -245,6 +299,7 @@ section .about ul.skillset li small {
   width: 25px;
   height: 25px;
   text-align: center;
+  cursor: pointer;
 }
 .detail .close:before, .detail .close:after {
   content: "";
@@ -253,6 +308,7 @@ section .about ul.skillset li small {
   height: 30px;
   position: absolute;
   background-color: #888;
+  cursor: pointer;
 }
 .detail .close:before {
   -moz-transform: rotate(-45deg);

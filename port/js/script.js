@@ -20,9 +20,11 @@ $( window ).resize(function() {
 });
 
 $('.works li').click(function(){
-	$('.detail').addClass('show')
+	$('.detail').addClass('show');
+  $('body').addClass('blur');
 });
 
 $('.detail .close').click(function(){
-	$('.detail').removeClass('show')
+	$('.detail').removeClass('show');
+  $('body').removeClass('blur');
 })

@@ -3,7 +3,7 @@
 @import mixin
 
 ::selection
-	background: #23C2C8
+	background: #ff9900
 	color #fff
 
 body
@@ -11,6 +11,22 @@ body
 	padding: 0
 	background: #f5f5f5
 	font-family: 'Roboto', sans-serif
+
+	&.blur
+		header,
+		section
+			+filter(blur(10px))
+			+transition(0.5s)
+			//+transform(scale(1.05))
+		&:after
+			position: fixed
+			width: 100%
+			height: 100%
+			top: 0
+			left: 0
+			z-index: 50
+			background-color: rgba(50,50,50,0.6)
+			content: ''
 
 nav
 	width: 100%
@@ -128,19 +144,50 @@ section
 						font-size: .7rem
 .detail
 	position: fixed
-	width: 90%
-	left: 5%
-	top: 10%
-	height: 80%
+	width: 92%
+	left: 4%
+	top: 5%
+	height: 90%
 	background-color: #efefef
-	z-index: 100
-	box-shadow: 0px 1px 10px rgba(150,150,150,0.5)
-	+transition(0.2s ease-in)
-	+transform(scale(0))
+	z-index: 0
+	box-shadow: 0px 1px 20px rgba(100,100,100,0.4), 0px 1px 5px rgba(80,80,80,0.5)
+	opacity: 0
+	+transition(0.2s linear)
+	+transform(translateY(50%) scale(1))
 	&.show
-		+transform(scale(1))
+		z-index: 100
+		opacity: 1
+		+transform(translateY(0) scale(1))
+	.scroll
+		position: absolute
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		overflow: auto
 	.inner
-		margin: 10px
+		width: 60%
+		margin: 30px auto
+		position: relative
+		text-align: center
+
+		h1
+			font-size: 2.2rem
+			line-height: 3rem
+			padding: 5rem 0 1rem
+		h3
+			font-size: 1.3rem
+			line-height: 2.2rem
+			margin-bottom: 30px
+			font-weight: thin
+		.pic
+			width: 100%
+			height: 500px
+			background-color: #ccc
+			margin: 15px auto
+		p
+			font-size: 1rem
+			line-height: 1.9rem
 	.close
 		font-size: 2rem
 		position: absolute
@@ -149,6 +196,7 @@ section
 		width: 25px
 		height: 25px
 		text-align: center
+		cursor: pointer
 		&:before,
 		&:after
 			content: ''
@@ -157,6 +205,7 @@ section
 			height: 30px
 			position: absolute
 			background-color: #888
+			cursor: pointer
 		&:before
 			+transform(rotate(-45deg))
 		&:after
