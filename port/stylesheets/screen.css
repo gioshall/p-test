@@ -64,7 +64,7 @@ body {
   background: #f5f5f5;
   font-family: "Roboto", sans-serif;
 }
-body.blur header,
+body.blur header h1,
 body.blur section {
   -webkit-filter: blur(10px);
   filter: blur(10px);
@@ -239,14 +239,14 @@ section .about ul.skillset li small {
   z-index: 0;
   box-shadow: 0px 1px 20px rgba(100, 100, 100, 0.4), 0px 1px 5px rgba(80, 80, 80, 0.5);
   opacity: 0;
-  -moz-transition: linear 0.2s;
-  -o-transition: linear 0.2s;
-  -webkit-transition: linear 0.2s;
-  transition: linear 0.2s;
-  -moz-transform: translateY(50%) scale(1);
-  -ms-transform: translateY(50%) scale(1);
-  -webkit-transform: translateY(50%) scale(1);
-  transform: translateY(50%) scale(1);
+  -moz-transition: ease-out 0.2s;
+  -o-transition: ease-out 0.2s;
+  -webkit-transition: ease-out 0.2s;
+  transition: ease-out 0.2s;
+  -moz-transform: translateY(30%) scale(1);
+  -ms-transform: translateY(30%) scale(1);
+  -webkit-transform: translateY(30%) scale(1);
+  transform: translateY(30%) scale(1);
 }
 .detail.show {
   z-index: 100;
