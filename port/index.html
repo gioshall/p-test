@@ -15,6 +15,9 @@ content="" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Dancing+Script:700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/jquery.mb.YTPlayer.js"></script>
+
 </head>
 <body>
 
@@ -30,10 +33,10 @@ content="" />
 
 <!-- header -->
 <header>
-	<video autoplay loop>
+	<!-- <video autoplay loop>
         <source src="img/bg-video.mp4" type="video/mp4">
-    </video>
-    <!-- <iframe src="https://www.youtube.com/v/6OJB5jEjqK4?autoplay=1&controls=0&version=3&loop=1&playlist=6OJB5jEjqK4" frameborder="0"></iframe> -->
+    </video> -->
+    <a id="bgndVideo" class="player" data-property="{videoURL:'https://youtu.be/zga8FRJPaio',containment:'body',autoPlay:true, mute:true, startAt:0, opacity:1, quality:'hd1080'}"></a>
     <h1>gio!</h1>
 </header>
 
@@ -123,7 +126,7 @@ content="" />
 	<h1>Contact</h1>
 </section>
 
-<script src="js/jquery-1.9.1.min.js"></script>
+
 <script src="js/script.js"></script>
 </body>
 </html>
