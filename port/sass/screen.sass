@@ -169,7 +169,36 @@ section
 		height: 100%
 		top: 0
 		left: 0
-		overflow: auto
+		iframe
+			position: relative
+			width: 100%
+			height: 100%
+			top: 0
+			left: 0
+	
+	.close
+		font-size: 2rem
+		position: absolute
+		top: 15px
+		right: 20px
+		width: 25px
+		height: 25px
+		text-align: center
+		cursor: pointer
+		&:before,
+		&:after
+			content: ''
+			width: 2px
+			font-size: 0
+			height: 30px
+			position: absolute
+			background-color: #888
+			cursor: pointer
+		&:before
+			+transform(rotate(-45deg))
+		&:after
+			+transform(rotate(45deg))
+.project
 	.inner
 		width: 60%
 		margin: 30px auto
@@ -193,27 +222,3 @@ section
 		p
 			font-size: 1rem
 			line-height: 1.9rem
-	.close
-		font-size: 2rem
-		position: absolute
-		top: 15px
-		right: 20px
-		width: 25px
-		height: 25px
-		text-align: center
-		cursor: pointer
-		&:before,
-		&:after
-			content: ''
-			width: 2px
-			font-size: 0
-			height: 30px
-			position: absolute
-			background-color: #888
-			cursor: pointer
-		&:before
-			+transform(rotate(-45deg))
-		&:after
-			+transform(rotate(45deg))
-
-

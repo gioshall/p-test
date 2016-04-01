@@ -270,34 +270,13 @@ section .about ul.skillset li small {
   height: 100%;
   top: 0;
   left: 0;
-  overflow: auto;
 }
-.detail .inner {
-  width: 60%;
-  margin: 30px auto;
+.detail .scroll iframe {
   position: relative;
-  text-align: center;
-}
-.detail .inner h1 {
-  font-size: 2.2rem;
-  line-height: 3rem;
-  padding: 5rem 0 1rem;
-}
-.detail .inner h3 {
-  font-size: 1.3rem;
-  line-height: 2.2rem;
-  margin-bottom: 30px;
-  font-weight: thin;
-}
-.detail .inner .pic {
   width: 100%;
-  height: 500px;
-  background-color: #ccc;
-  margin: 15px auto;
-}
-.detail .inner p {
-  font-size: 1rem;
-  line-height: 1.9rem;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 .detail .close {
   font-size: 2rem;
@@ -329,4 +308,32 @@ section .about ul.skillset li small {
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+.project .inner {
+  width: 60%;
+  margin: 30px auto;
+  position: relative;
+  text-align: center;
+}
+.project .inner h1 {
+  font-size: 2.2rem;
+  line-height: 3rem;
+  padding: 5rem 0 1rem;
+}
+.project .inner h3 {
+  font-size: 1.3rem;
+  line-height: 2.2rem;
+  margin-bottom: 30px;
+  font-weight: thin;
+}
+.project .inner .pic {
+  width: 100%;
+  height: 500px;
+  background-color: #ccc;
+  margin: 15px auto;
+}
+.project .inner p {
+  font-size: 1rem;
+  line-height: 1.9rem;
 }

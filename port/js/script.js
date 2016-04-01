@@ -24,8 +24,10 @@ $(document).ready(function() {
 });
 
 $('.works li').click(function(){
+	var name = $(this).attr('title');
 	$('.detail').addClass('show');
-  $('body').addClass('blur');
+	$('.detail iframe').attr('src','projects/' + name + '.html');
+	$('body').addClass('blur');
 });
 
 $('.detail .close').click(function(){
