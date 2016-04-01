@@ -113,8 +113,7 @@ header {
   text-align: center;
   overflow: hidden;
   color: #fff;
-  background-image: url("../img/bg-video.gif");
-  background-repeat: no-repeat;
+  background-color: #666;
   background-size: cover;
   background-position: center;
 }
