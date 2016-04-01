@@ -32,5 +32,6 @@ $('.works li').click(function(){
 
 $('.detail .close').click(function(){
 	$('.detail').removeClass('show');
+	$('.detail iframe').attr('src','');
   $('body').removeClass('blur');
 })
