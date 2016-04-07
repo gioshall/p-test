@@ -338,11 +338,49 @@ section .about ul.skillset li small {
 }
 .project .inner .pic {
   width: 100%;
-  height: 500px;
-  background-color: #ccc;
+  text-align: center;
   margin: 15px auto;
+}
+.project .inner .pic img {
+  max-width: 100%;
+  display: block;
+  margin: auto;
 }
 .project .inner p {
   font-size: 1rem;
   line-height: 1.9rem;
+}
+.project .inner .browser-mockup {
+  border-top: 2em solid rgba(200, 200, 200, 0.7);
+  box-shadow: 0 0 1px 0 rgba(50, 50, 50, 0.4);
+  position: relative;
+  border-radius: 3px 3px 0 0;
+  margin: 15px auto;
+}
+.project .inner .browser-mockup:before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: -1.25em;
+  left: 1em;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  background-color: #f44;
+  box-shadow: 0 0 0 2px #f44, 1.5em 0 0 2px #9b3, 3em 0 0 2px #fb5;
+}
+.project .inner .browser-mockup.browser-mockup.with-url:after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: -1.6em;
+  left: 5.5em;
+  width: calc(100% - 6em);
+  height: 1.2em;
+  border-radius: 2px;
+  background-color: white;
+}
+.project .inner .browser-mockup img {
+  display: block;
+  width: 100%;
 }
