@@ -266,3 +266,33 @@ section
 			img
 				display: block
 				width: 100%
+		.mobile-mockup
+			width: 184px
+			border-top: solid 40px #ddd
+			border-left: solid 12px #ddd
+			border-right: solid 12px #ddd
+			border-bottom: solid 40px #ddd
+			border-radius: 12px
+			position: relative
+			margin: 0 auto
+			&:before,
+			&:after
+				position: absolute	
+				content: ''
+				background-color: #bbb
+			&:before
+				top: -21px
+				width: 30px
+				height: 6px
+				box-shadow: 0 0 0 0 #bbb
+				margin-left: -15px
+				+border-radius(3px)
+			&:after
+				bottom: -34px
+				margin-left: -15px
+				width: 28px
+				height: 28px
+				+border-radius(50%)			
+			img
+				display: block
+				width: 100%
