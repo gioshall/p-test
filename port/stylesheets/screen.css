@@ -390,9 +390,10 @@ section .about ul.skillset li small {
   border-left: solid 12px #ddd;
   border-right: solid 12px #ddd;
   border-bottom: solid 40px #ddd;
-  border-radius: 12px;
+  border-radius: 15px;
   position: relative;
   margin: 0 auto;
+  text-align: center;
 }
 .project .inner .mobile-mockup:before, .project .inner .mobile-mockup:after {
   position: absolute;
@@ -421,4 +422,46 @@ section .about ul.skillset li small {
 .project .inner .mobile-mockup img {
   display: block;
   width: 100%;
+}
+.project .inner .combine {
+  position: relative;
+  width: 100%;
+  text-align: left;
+  padding-bottom: 10px;
+  margin: 30px 0 40px;
+}
+.project .inner .combine .put-back {
+  width: 85%;
+  margin-left: 0;
+}
+.project .inner .combine .put-front {
+  position: absolute;
+  width: 18%;
+  bottom: 0;
+  right: 0;
+}
+.project .inner .combine .mobile-mockup {
+  border-top: solid 30px #ddd;
+  border-left: solid 8px #ddd;
+  border-right: solid 8px #ddd;
+  border-bottom: solid 30px #ddd;
+  border-radius: 10px;
+}
+.project .inner .combine .mobile-mockup:before {
+  top: -16px;
+  width: 28px;
+  height: 4px;
+  margin-left: -14px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+.project .inner .combine .mobile-mockup:after {
+  bottom: -25px;
+  margin-left: -11px;
+  width: 20px;
+  height: 20px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
 }
