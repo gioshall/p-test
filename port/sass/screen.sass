@@ -154,6 +154,43 @@ section
 					width: 100%
 					small
 						font-size: .7rem
+	.form-cont
+		width: 60%
+		margin: auto
+		font-size: 1rem
+		line-height: 2rem
+		text-align: center
+		ul
+			width: 80%
+			li
+				width: 100%
+				display: block
+			label,
+			h2,
+			span,
+			input,
+			div,
+			textarea
+				display: inline-block
+				vertical-align: middle
+		#complete
+			position: absolute
+			width: 100%
+			height: 100%
+			background-color: rgba(239,239,239,0.8)
+			top: 0
+			color: #ff3300
+			font-size: 70px
+			line-height: 210px
+			text-align: center
+			opacity: 0
+			+transition(0.2s ease-in)
+			+transform(scale(0))
+		&.show-ok
+			#complete
+				opacity: 1
+				+transform(scale(1))
+
 .detail
 	position: fixed
 	width: calc(100% - 30px)
@@ -205,6 +242,8 @@ section
 			+transform(rotate(-45deg))
 		&:after
 			+transform(rotate(45deg))
+
+
 .project
 	.inner
 		width: 60%
