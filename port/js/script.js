@@ -21,6 +21,7 @@ var wWidth = $(window).width();
 
 $(document).ready(function() {
     $('.player').mb_YTPlayer();
+    $('.form-cont').load('form.html');
 });
 
 $('.works li').click(function(){

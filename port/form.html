@@ -1,0 +1,77 @@
+<script>
+	var submitted = false;
+
+	function formOK() {
+		if (submitted) {
+			$('.form-cont').addClass('show-ok');
+			setTimeout(function() {
+				$('.form-cont').removeClass('show-ok');
+			}, 3000);
+		}
+	};
+</script>
+
+<iframe name="hidden_iframe" id="hidden_iframe"
+style="display:none;" onload="formOK()"></iframe>
+
+<div id="complete">
+	<i class="fa fa-check-circle"></i>
+</div>
+
+
+<form action="https://docs.google.com/forms/d/1i5n6ame4abjja806TCTLK2_pW1XRZGhnw7CenDzmnG0/formResponse" method="POST" id="ss-form" target="hidden_iframe" onsubmit="submitted=true;">
+
+
+
+<ul>
+
+<li>
+<label for="entry_1694607141">
+<div>
+	<h2>name</h2>
+	<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label><span>*</span>
+</div>
+</label>
+<input type="text" name="entry.1694607141" id="entry_1694607141" aria-required="true">
+</li>
+
+<li>
+<label for="entry_1584668053">
+<div>
+	<h2>email</h2>
+	<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label><span>*</span>
+</div>
+</label>
+<input type="text" name="entry.1584668053" id="entry_1584668053" aria-required="true">
+</li>
+
+<li>
+<label for="entry_831427812">
+<div>
+	<h2>phone</h2>
+</div>
+</label>
+<input type="text" name="entry.831427812" id="entry_831427812" aria-required="true">
+</li>
+
+<li>
+<label for="entry_910451019">
+<div>
+	<h2>message</h2>
+	<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label><span>*</span>
+</div>
+</label>
+<textarea name="entry.910451019" rows="8" cols="0" id="entry_910451019"></textarea>
+</li>
+
+</ul>
+
+
+<input type="hidden" name="draftResponse" value="[,,&quot;-6219543592624945457&quot;]
+">
+<input type="hidden" name="pageHistory" value="0">
+<input type="hidden" name="fbzx" value="-6219543592624945457">
+<input type="submit" name="submit" value="submit" id="ss-submit" class="">
+
+</form>
+
