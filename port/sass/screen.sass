@@ -152,20 +152,50 @@ section
 					margin: 0
 					padding: 0
 					width: 100%
+					font-size: 1rem
 					small
 						font-size: .7rem
-	.form-cont
+	.contact
 		width: 60%
 		margin: auto
 		font-size: 1rem
 		line-height: 2rem
-		text-align: center
-		ul
-			width: 80%
+		text-align: left
+		.des,
+		.form-cont
+			display: inline-block
+			vertical-align: middle
+		.des
+			width: 35%
+			margin-left: 3%
+			font-size: 1.2rem	
+		.form-cont
+			text-align: center
+			width: 60%
 			li
 				width: 100%
 				display: block
-			label,
+				margin: 10px 0
+				label
+					font-size: 0
+					height: 0
+				input,
+				textarea
+					text-indent: 10px
+					height: 2rem
+					font-size: 0.9rem
+					font-family: 'Roboto', sans-serif
+					border: 1px #ccc solid
+					padding: 5px 0
+					color: #666
+					&:focus
+						border: 1px #ff9900 solid
+						outline: none
+				textarea
+					height: 5rem
+					text-indent: 0
+					padding: 5px 10px
+					width: calc(100% - 20px)
 			h2,
 			span,
 			input,
@@ -173,23 +203,24 @@ section
 			textarea
 				display: inline-block
 				vertical-align: middle
-		#complete
-			position: absolute
-			width: 100%
-			height: 100%
-			background-color: rgba(239,239,239,0.8)
-			top: 0
-			color: #ff3300
-			font-size: 70px
-			line-height: 210px
-			text-align: center
-			opacity: 0
-			+transition(0.2s ease-in)
-			+transform(scale(0))
-		&.show-ok
+				width: 100%	
 			#complete
-				opacity: 1
-				+transform(scale(1))
+				position: absolute
+				width: 100%
+				height: 100%
+				background-color: rgba(239,239,239,0.8)
+				top: 0
+				color: #ff3300
+				font-size: 70px
+				line-height: 210px
+				text-align: center
+				opacity: 0
+				+transition(0.2s ease-in)
+				+transform(scale(0))
+			&.show-ok
+				#complete
+					opacity: 1
+					+transform(scale(1))
 
 .detail
 	position: fixed
