@@ -252,6 +252,7 @@ section .contact {
   font-size: 1rem;
   line-height: 2rem;
   text-align: left;
+  padding-bottom: 60px;
 }
 section .contact .des,
 section .contact .form-cont {
@@ -284,7 +285,7 @@ section .contact .form-cont li textarea {
   font-family: "Roboto", sans-serif;
   border: 1px #ccc solid;
   padding: 5px 0;
-  color: #666;
+  color: #444;
 }
 section .contact .form-cont li input:focus,
 section .contact .form-cont li textarea:focus {
@@ -305,6 +306,14 @@ section .contact .form-cont textarea {
   display: inline-block;
   vertical-align: middle;
   width: 100%;
+}
+section .contact .form-cont .form-btn {
+  background-color: #ff9900;
+  color: #fff;
+  border: 0;
+  font-size: 1rem;
+  letter-spacing: 2.5px;
+  line-height: 2.5rem;
 }
 section .contact .form-cont #complete {
   position: absolute;
