@@ -369,16 +369,29 @@ section
 				background-color: #f44
 				box-shadow: 0 0 0 2px #f44, 1.5em 0 0 2px #9b3, 3em 0 0 2px #fb5
 
-			&.browser-mockup.with-url:after
-				display: block
-				position: absolute
-				content: ''
-				top: -1.6em
-				left: 5.5em
-				width: calc(100% - 6em)
-				height: 1.2em
-				border-radius: 2px
-				background-color: white
+			&.with-url
+				&:after
+					display: block
+					position: absolute
+					content: ''
+					top: -1.6em
+					left: 5.5em
+					width: calc(100% - 6em)
+					height: 1.2em
+					border-radius: 2px
+					background-color: white
+				&.iframe
+					width: 700px
+					height: 394px
+					.cont
+						width: 700px
+						height: 394px
+						display: block
+						overflow: hidden
+						iframe
+							width: 1280px
+							height: 720px
+							+transform(scale(0.55) translateX(-41%) translateY(-41%))
 
 			img
 				display: block

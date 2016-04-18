@@ -514,7 +514,7 @@ section .contact .form-cont.show-ok #complete {
   background-color: #f44;
   box-shadow: 0 0 0 2px #f44, 1.5em 0 0 2px #9b3, 3em 0 0 2px #fb5;
 }
-.project .inner .browser-mockup.browser-mockup.with-url:after {
+.project .inner .browser-mockup.with-url:after {
   display: block;
   position: absolute;
   content: "";
@@ -524,6 +524,24 @@ section .contact .form-cont.show-ok #complete {
   height: 1.2em;
   border-radius: 2px;
   background-color: white;
+}
+.project .inner .browser-mockup.with-url.iframe {
+  width: 700px;
+  height: 394px;
+}
+.project .inner .browser-mockup.with-url.iframe .cont {
+  width: 700px;
+  height: 394px;
+  display: block;
+  overflow: hidden;
+}
+.project .inner .browser-mockup.with-url.iframe .cont iframe {
+  width: 1280px;
+  height: 720px;
+  -moz-transform: scale(0.55) translateX(-41%) translateY(-41%);
+  -ms-transform: scale(0.55) translateX(-41%) translateY(-41%);
+  -webkit-transform: scale(0.55) translateX(-41%) translateY(-41%);
+  transform: scale(0.55) translateX(-41%) translateY(-41%);
 }
 .project .inner .browser-mockup img {
   display: block;
