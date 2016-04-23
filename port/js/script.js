@@ -25,7 +25,7 @@ $(document).ready(function() {
 });
 
 $('.works li').click(function(){
-	var name = $(this).attr('title');
+	var name = $(this).attr('project');
 	$('.detail').addClass('show');
 	$('.detail iframe').attr('src','projects/' + name + '.html');
 	$('body').addClass('blur');
